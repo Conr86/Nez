@@ -73,19 +73,19 @@ namespace Nez
 			_destinationRect = PreviousSceneRender.Bounds;
 
 			// load Effect and set defaults
-			_textureWipeEffect = Core.Content.LoadEffect("Content/nez/effects/transitions/TextureWipe.mgfxo");
+			_textureWipeEffect = Core.Content.LoadEffect("Content/Effects/transitions/TextureWipe.mgfxo");
 			Opacity = 1f;
 			Color = Color.Black;
 			TransitionTexture = transitionTexture;
 		}
 
 		public TextureWipeTransition(Func<Scene> sceneLoadAction) : this(sceneLoadAction,
-			Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/angular"))
+			Core.Content.Load<Texture2D>("Textures/textureWipeTransition/angular"))
 		{
 		}
 
 		public TextureWipeTransition() : this(null,
-			Core.Content.Load<Texture2D>("nez/textures/textureWipeTransition/angular"))
+			Core.Content.Load<Texture2D>("Textures/textureWipeTransition/angular"))
 		{
 		}
 
